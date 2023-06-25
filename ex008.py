@@ -7,6 +7,6 @@ Decametro = Metros / 10
 Hectometro = Metros / 100
 Quilometro = Metros / 1000
 # Execução
-print('Metros {} para milímetros {}\nMetros {} para cemtímetros {}'.format(Metros, Milimetros, Metros, Cemtimetros))
+print('Metros {} para milímetros {}\nMetros {} para centímetros {}'.format(Metros, Milimetros, Metros, Cemtimetros))
 print('Metros {} para decâmetros {}\nMetros {} para hectometro {}'.format(Metros, Decametro, Metros, Hectometro))
 print('Metros {} para quilômetros {}'.format(Metros, Quilometro))
