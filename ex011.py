@@ -6,4 +6,4 @@ Largura = float(input('Qual a largura da parede?\n>>> '))
 Area = Altura * Largura
 
 # Execução
-print('Litros de tintas necessários: {:.0f}'.format((Area // 4) + 1))
+print('Litros de tintas necessários: {:.0f}'.format((Area / 2) + 1))
