@@ -8,4 +8,4 @@ Desconto = (Valor / 100) * 95
 
 # Execução
 
-print('O valor do Produto com desconto: R$ {:.2f}'.format(Desconto))
+print('O valor do Produto com desconto é: R$ {:.2f}'.format(Desconto))
