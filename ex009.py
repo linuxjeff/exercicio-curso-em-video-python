@@ -1,8 +1,13 @@
 # Variáveis
 Numero = int(input('Digite um número: '))
 
+Mutiplicador = 1
+
 # Execução
-print('Tabuada do {}\n{} x 0 = {:^5}\n{} x 1 = {:^5}'.format(Numero, Numero, Numero * 0, Numero, Numero * 1))
-print('{} x 3 = {:^5}\n{} x 4 = {:^5}\n{} x 5 = {:^5}'.format(Numero, Numero * 3, Numero, Numero * 4, Numero, Numero * 5))
-print('{} x 6 = {:^5}\n{} x 7 = {:^5}\n{} x 8 = {:^5}'.format(Numero, Numero * 6, Numero, Numero * 7, Numero, Numero * 8))
-print('{} x 9 = {:^5}\n{} x 10 = {:^5}'.format(Numero, Numero * 9, Numero, Numero * 10))
+print('-' * 15 )
+print('Tabuada do {}\n{:^} x {:>2} = {:^}\n{:^} x {:>2} = {:^}'.format(Numero, Numero, Mutiplicador -1 , Numero * 0, Numero, Mutiplicador, Numero * 1))
+print('{:^} x {:>2} = {}'.format(Numero, Mutiplicador + 1, Numero * 2))
+print('{:^} x {:>2} = {:^}\n{:^} x {:>2} = {:^}\n{:^} x {:>2} = {:^}'.format(Numero, Mutiplicador + 1, Numero * 3, Numero, Mutiplicador + 3, Numero * 4, Numero, Mutiplicador + 4, Numero * 5))
+print('{:^} x {:>2} = {:^}\n{} x {:>2} = {:^}\n{:^} x {:>2} = {:^}'.format(Numero, Mutiplicador + 5, Numero * 6, Numero, Mutiplicador + 6, Numero * 7, Numero, Mutiplicador + 7, Numero * 8))
+print('{:^} x {:>2} = {:^}\n{:^} x {:<} = {:^}'.format(Numero, Mutiplicador + 8, Numero * 9, Numero, Mutiplicador + 9, Numero * 10))
+print('-' * 15)
