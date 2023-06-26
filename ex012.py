@@ -4,7 +4,9 @@
 
 Valor = float(input('Qual o valor do produto?\n>>> R$'))
 
-Desconto = (Valor / 100) * 95
+Desconto = float(input('Qual a porcentagem do desconto?\n>>> '))
+
+Calculo = (Valor / 100) * (100 - Desconto)
 
 # Execução
 
