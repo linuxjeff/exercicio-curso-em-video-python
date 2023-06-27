@@ -4,7 +4,7 @@
 
 ValorSalarioAtual = float(input('Qual o salário atual do funcionario?\n>>> '))
 
-ValorComAlmento = ((ValorSalarioAtual / 100) * 15) + ValorSalarioAtual
+ValorComAlmento = (ValorSalarioAtual * 15 / 100) + ValorSalarioAtual
 
 # Execução
 
