@@ -11,4 +11,4 @@ CatetoAdjacente = float(input('Qual o cateto adjacente?\n>>> '))
 
 # Execução
 
-print('O triangulo retângulo com o cateto oposto igual a {} e o cateto adjacente igual {} tem a hipotenusa de: {}'.format(CatetoOposto, CatetoAdjacente, hypot(CatetoOposto, CatetoAdjacente)))
+print('O triangulo retângulo com o cateto oposto igual a {} e o cateto adjacente igual {} tem a hipotenusa de: {:.2f}'.format(CatetoOposto, CatetoAdjacente, hypot(CatetoOposto, CatetoAdjacente)))
