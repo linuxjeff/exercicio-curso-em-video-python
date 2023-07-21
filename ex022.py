@@ -6,8 +6,11 @@ NomeCompleto = input('Qual o seu nome completo?\n>>> ')
 
 NomeCompleto = NomeCompleto.strip()
 
-NomeCompleto = NomeCompleto.split()
+ListaDoNome = NomeCompleto.split()
 
-NomeCompleto = ''.join(fractions)
+Caracteres = ''.join(NomeCompleto.split())
 
-print(lon.NomeCompleto())
+print('Nome com letras maiúsculas: {}'.format(NomeCompleto.upper()))
+print('Nome com letras maiúsculas: {}'.format(NomeCompleto.lower()))
+print('O nome completo tem {} caracteres.'.format(len(Caracteres)))
+print('O primeito nome tem {} caracteres.'.format(len(ListaDoNome[0])))
