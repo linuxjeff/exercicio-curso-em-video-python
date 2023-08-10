@@ -6,9 +6,7 @@ RetaDois = float(input('Digite o tamanho da segunda reta.\n>>> '))
 
 RetaTres = float(input('Digite o tamanho da terceira reta.\n>>> '))
 
-UmDois = RetaUm + RetaDois
-
-if UmDois > RetaTres:
+if RetaUm + RetaDois > RetaTres and RetaDois + RetaTres > RetaUm and RetaTres + RetaUm > RetaDois:
     print('Às três retas formam um triângulo.')
 else:
     print('Às três retas não formam um triângulo.')
