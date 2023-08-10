@@ -9,11 +9,9 @@ Terceiro = int(input('Digite o terceiro número.\n>>> '))
 print(Primeiro, Segundo, Terceiro)
 
 # Menor
-if Primeiro < Segundo:
-    if Primeiro < Terceiro:
-        Menor = Primeiro
-    else:
-        Menor = Terceiro
+if Primeiro < Segundo and Primeiro < Terceiro:
+    Menor = Primeiro
+
 else:
     if Segundo < Terceiro:
         Menor = Segundo
@@ -21,11 +19,9 @@ else:
         Menor = Terceiro
 
 # Maior
-if Primeiro > Segundo:
-    if Primeiro > Terceiro:
-        Maior = Primeiro
-    else:
-        Maior = Terceiro
+if Primeiro > Segundo and Primeiro > Terceiro:
+    Maior = Primeiro
+
 else:
     if Segundo > Terceiro:
         Maior = Segundo
