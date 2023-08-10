@@ -6,8 +6,6 @@ Segundo = int(input('Digite o segundo número.\n>>> '))
 
 Terceiro = int(input('Digite o terceiro número.\n>>> '))
 
-print(Primeiro, Segundo, Terceiro)
-
 # Menor
 if Primeiro < Segundo and Primeiro < Terceiro:
     Menor = Primeiro
