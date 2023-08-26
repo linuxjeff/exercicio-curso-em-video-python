@@ -5,6 +5,7 @@
 # v0.0.2
 #   - termidado o if para texto de aprovação.
 #   - Corrigido erro do if. o printe não estava com variável.
+#   - Corrigido erro do printe.
 
 # Variáveis
 
@@ -19,7 +20,7 @@ ValorParcelas = CasaValor / (AnosParaPagar * 12)
 ValorMaxDaParcelas = SalarioDoComprador / 100 * 30
 
 if ValorParcelas < ValorMaxDaParcelas:
-    print('Seu empréstimo foi aprovado e a parcelas tem o valor de: R${:.f2}'.format(ValorParcelas))
+    print('Seu empréstimo foi aprovado e a parcelas tem o valor de: R${:.2f}'.format(ValorParcelas))
 else:
     print('O empréstimo não foi aprovado, o valor da parcela excede 30 porcento da sua renda mensal.')
 
