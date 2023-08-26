@@ -16,6 +16,16 @@
 #
 #  v0.0.1 26-08-2023, Jefferson Santana
 #   - Versão inicial
+#   - Criada as varáveis e o debug de variávei.
 #
 # Licença: MIT.
 #
+
+# Variáveis
+
+NumeroD = int(input('Digite um número.\n>>>'))
+
+Base = int(input('Para qual base quer converter seu número?\n1 - Binário\n2 - Hexedecimal\n3 - Octal'))
+
+# Debug das variávei
+print(NumeroD, Base)
