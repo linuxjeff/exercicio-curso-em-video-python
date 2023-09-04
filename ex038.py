@@ -12,8 +12,25 @@
 #
 # Histórico:
 #
-#  v0.0.1 31-09-2023, Jefferson Santana
-#   - Versão inicial
+#  v0.0.1 31-08-2023, Jefferson Santana
+#   - Versão inicial.
+#   - Criado área de variáveis.
+#   - Criado variáveis para colher números.
+#   - Criado áreas de execução.
+#   - Criado debug de variáveis.
+#   - Testado recolhimento de números.
 #
 # Licença: MIT.
 #
+
+# Variáveis
+Primeiro = int(input('Digite o primeiro número: '))
+
+Segundo = int(input('Digite o segundo número: '))
+
+# Execução
+
+
+
+# Debug de variáveis.
+print(Primeiro, Segundo)
