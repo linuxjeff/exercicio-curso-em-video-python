@@ -19,6 +19,8 @@
 #   - Criado áreas de execução.
 #   - Criado debug de variáveis.
 #   - Testado recolhimento de números.
+#   - Criado o IF para o teste de qual número é maior.
+#   - Retirado o debug de variáveis.
 #
 # Licença: MIT.
 #
@@ -30,7 +32,9 @@ Segundo = int(input('Digite o segundo número: '))
 
 # Execução
 
-
-
-# Debug de variáveis.
-print(Primeiro, Segundo)
+if Primeiro > Segundo:
+    print('O número {} que é o primeiro é maior que o número: {}'.format(Primeiro, Segundo))
+elif Segundo > Primeiro:
+    print('O número {} que é o segundo é maior que o número: {}'.format(Segundo, Primeiro))
+else:
+    print('Os dois números são igual!')
