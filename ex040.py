@@ -16,15 +16,20 @@
 #   - Versão inicial
 #   - Criado área de variáveis iniciais
 #   - Criado o debug de variáveis
+#   - Criadas e testadas às variáveis NotaUm e NotaDois.
 #
 # Licença: MIT.
 #
 
 # Variáveis Inicias
 
+NotaUm = float(input('Qual a primeira nota do aluno?\n>>> '))
+
+NotaDois = float(input('Qual a segunda nota no aluno?\n>>> '))
+
 # -----------------------------------------------------------------------------
 # Debug de variáveis
 
-print()
+print(NotaUm, NotaDois)
 
 # -----------------------------------------------------------------------------
