@@ -14,6 +14,12 @@
 #
 #  v0.0.1 07-09-2023, Jefferson Santana
 #   - Versão inicial
+#   - Criado área de variáveis iniciais
 #
 # Licença: MIT.
 #
+
+# Variáveis Inicias
+
+
+
