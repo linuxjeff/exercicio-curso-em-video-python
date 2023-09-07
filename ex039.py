@@ -19,6 +19,7 @@
 #   - Criado a área de variáveis
 #   - criado o debug de variáveis
 #   - Importando date da biblioteca datetime
+#   - Criado if para testar a condição do alistamento
 #
 # Licença: MIT.
 #
@@ -37,9 +38,14 @@ AnoAtual = int(date.today().year)
 Idade = AnoAtual - AnoDeNascimento
 
 # -----------------------------------------------------------------------------
-
+# If para verificar o ano do alistamento.
 if Idade == 18:
-    print('Você tem que se alista')
+    print('Você tem que se alista!')
+elif Idade < 18:
+    print('Seu alistamento será no ano de {}'.format(AnoAtual + (18 - Idade)))
+elif Idade > 18:
+    print('Seu alistamento era para ser no ano de {}'.format(AnoAtual - (Idade - 18)))
+    print('Caso não tenha se apresentado procure o escritório das forças armadas mais próximo.')
 
 # debug de variáveis
 
