@@ -27,10 +27,20 @@
 
 from datetime import date
 
-# Varáveis
+# -----------------------------------------------------------------------------
+# Varáveis ínicias
 
 AnoDeNascimento = int(input('Qual o ano do seu nascimento?\n>>> '))
 
+AnoAtual = int(date.today().year)
+
+Idade = AnoAtual - AnoDeNascimento
+
+# -----------------------------------------------------------------------------
+
+if Idade == 18:
+    print('Você tem que se alista')
+
 # debug de variáveis
 
-print(AnoDeNascimento, date.today().year)
+print(AnoDeNascimento, AnoAtual, Idade)
