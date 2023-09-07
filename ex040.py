@@ -16,7 +16,8 @@
 #   - Versão inicial
 #   - Criado área de variáveis iniciais
 #   - Criado o debug de variáveis
-#   - Criadas e testadas às variáveis NotaUm e NotaDois.
+#   - Criadas e testadas às variáveis NotaUm e NotaDois
+#   - Criada e testada a variável Media
 #
 # Licença: MIT.
 #
@@ -27,9 +28,11 @@ NotaUm = float(input('Qual a primeira nota do aluno?\n>>> '))
 
 NotaDois = float(input('Qual a segunda nota no aluno?\n>>> '))
 
+Media = (NotaUm + NotaDois) / 2
+
 # -----------------------------------------------------------------------------
 # Debug de variáveis
 
-print(NotaUm, NotaDois)
+print(NotaUm, NotaDois, Media)
 
 # -----------------------------------------------------------------------------
