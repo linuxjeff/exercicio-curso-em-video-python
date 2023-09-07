@@ -18,9 +18,14 @@
 #   - Versão inicial
 #   - Criado a área de variáveis
 #   - criado o debug de variáveis
+#   - Importando date da biblioteca datetime
 #
 # Licença: MIT.
 #
+
+# Importando Bibliotecas
+
+from datetime import date
 
 # Varáveis
 
@@ -28,4 +33,4 @@ AnoDeNascimento = int(input('Qual o ano do seu nascimento?\n>>> '))
 
 # debug de variáveis
 
-print(AnoDeNascimento)
+print(AnoDeNascimento, date.today().year)
