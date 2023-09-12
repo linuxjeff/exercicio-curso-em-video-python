@@ -31,6 +31,12 @@ NotaDois = float(input('Qual a segunda nota no aluno?\n>>> '))
 Media = (NotaUm + NotaDois) / 2
 
 # -----------------------------------------------------------------------------
+
+if Media <= 5:
+    print('Sua média foi {}, você esta reprovado'.format(Media))
+elif Media > 5.01 and Media < 6.9:
+
+# -----------------------------------------------------------------------------
 # Debug de variáveis
 
 print(NotaUm, NotaDois, Media)
