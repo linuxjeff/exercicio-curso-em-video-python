@@ -18,6 +18,9 @@
 #   - Criado o debug de variáveis
 #   - Criadas e testadas às variáveis NotaUm e NotaDois
 #   - Criada e testada a variável Media
+#  v0.0.2 13-09-2023, Jefferson Santana
+#   - Criado IF para resuldado da média
+#   - Retirado debug da variável
 #
 # Licença: MIT.
 #
@@ -31,14 +34,13 @@ NotaDois = float(input('Qual a segunda nota no aluno?\n>>> '))
 Media = (NotaUm + NotaDois) / 2
 
 # -----------------------------------------------------------------------------
+# If para resultado da média.
 
 if Media <= 5:
-    print('Sua média foi {}, você esta reprovado'.format(Media))
-elif Media > 5.01 and Media < 6.9:
-
-# -----------------------------------------------------------------------------
-# Debug de variáveis
-
-print(NotaUm, NotaDois, Media)
+    print('Sua média foi {:.2f}, você esta reprovado.'.format(Media))
+elif Media < 6.9:
+    print('Sua média foi {:.2f}, você esta de recuperação.'.format(Media))
+elif Media >= 6.91:
+    print('Sua média foi {:.2f}, você esta aprovado'.format(Media))
 
 # -----------------------------------------------------------------------------
