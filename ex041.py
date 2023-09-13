@@ -13,19 +13,29 @@
 #
 #  v0.0.1 13-09-2023, Jefferson Santana
 #   - Versão inicial
-#   - Criado área de variáveis
+#   - Criada área de variáveis
 #   - Criado debug de variáveis
+#   - Criada área de importação de bibliotecas
+#   - importada a biblioteca datetime
+#   - Criada a variável "Idade"
 #
 # Licença: MIT.
 #
 
+# importando bibliotecas
+
+from datetime import date
+
+# -----------------------------------------------------------------------------
 # Variável
 
 AnoDeNascimento = int(input('Qual seu ano de nascimento?\n>>> '))
 
+Idade = date.today().year - AnoDeNascimento
+
 # -----------------------------------------------------------------------------
 # Debug de variáveis
 
-print(AnoDeNascimento)
+print(AnoDeNascimento, Idade)
 
 # -----------------------------------------------------------------------------
