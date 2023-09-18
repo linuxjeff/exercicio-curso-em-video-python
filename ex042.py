@@ -18,6 +18,25 @@
 #
 #  v0.0.1 13-09-2023, Jefferson Santana
 #   - Versão inicial
+#  v0.0.2 18-09-2023, Jefferson Santana
+#   - Criada área de variáveis
+#   - Criadas às variáveis RetaUm, RetaDois e RetaTrês
+#   - Criado o debug de variáveis
 #
 # Licença: MIT.
 #
+
+# Variáveis
+
+RetaUm = float(input('Qual o tamanho da primeira reta?\n>>> '))
+
+RetaDois =float(input('Qual o tanhano da segunda reta?\n>>> '))
+
+RetaTres = float(input('Qual o tamanho da segunda reta?\n>>> '))
+
+# -----------------------------------------------------------------------------
+# Debug de variáveis
+
+print(RetaUm, RetaDois, RetaTres)
+
+# -----------------------------------------------------------------------------
