@@ -18,17 +18,20 @@
 #   - Versão inicial
 #   - Criada área de variáveis
 #   - Criado o debug de variáveis
+#   - Criadas às variáveis Altura e Peso
 #
 # Licença: MIT.
 #
 
 # Variáveis
 
+Altura = float(input('Qual a sua altura?\n>>> '))
 
+Peso = float(input('Qual o seu peso?\n>>> '))
 
 # -----------------------------------------------------------------------------
 # Debug de variáveis
 
-print()
+print(Altura, Peso)
 
 # -----------------------------------------------------------------------------
