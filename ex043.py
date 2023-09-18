@@ -16,6 +16,19 @@
 #
 #  v0.0.1 18-09-2023, Jefferson Santana
 #   - Versão inicial
+#   - Criada área de variáveis
+#   - Criado o debug de variáveis
 #
 # Licença: MIT.
 #
+
+# Variáveis
+
+
+
+# -----------------------------------------------------------------------------
+# Debug de variáveis
+
+print()
+
+# -----------------------------------------------------------------------------
