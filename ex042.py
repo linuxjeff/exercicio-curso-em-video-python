@@ -22,6 +22,7 @@
 #   - Criada área de variáveis
 #   - Criadas às variáveis RetaUm, RetaDois e RetaTrês
 #   - Criado o debug de variáveis
+#   - Criado o if para testar as retas
 #
 # Licença: MIT.
 #
@@ -33,6 +34,15 @@ RetaUm = float(input('Qual o tamanho da primeira reta?\n>>> '))
 RetaDois =float(input('Qual o tanhano da segunda reta?\n>>> '))
 
 RetaTres = float(input('Qual o tamanho da segunda reta?\n>>> '))
+
+# -----------------------------------------------------------------------------
+# Execução direta
+
+# If para testar as retas.
+if RetaUm + RetaDois > RetaTres and RetaDois + RetaTres > RetaUm and RetaTres + RetaUm > RetaDois:
+    print('As três retas formam um triângulo.')
+else:
+    print('As três retas não formam um triângulo.')
 
 # -----------------------------------------------------------------------------
 # Debug de variáveis
