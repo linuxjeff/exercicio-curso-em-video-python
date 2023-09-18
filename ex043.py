@@ -29,9 +29,11 @@ Altura = float(input('Qual a sua altura?\n>>> '))
 
 Peso = float(input('Qual o seu peso?\n>>> '))
 
+IMC = Peso / Altura
+
 # -----------------------------------------------------------------------------
 # Debug de variáveis
 
-print(Altura, Peso)
+print(Altura, Peso, IMC)
 
 # -----------------------------------------------------------------------------
