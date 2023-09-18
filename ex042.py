@@ -23,6 +23,8 @@
 #   - Criadas às variáveis RetaUm, RetaDois e RetaTrês
 #   - Criado o debug de variáveis
 #   - Criado o if para testar as retas
+#   - Criado o if para dizer qual é o tipo do triângulo
+#   - Retirado área de debug de variáveis
 #
 # Licença: MIT.
 #
@@ -41,12 +43,14 @@ RetaTres = float(input('Qual o tamanho da segunda reta?\n>>> '))
 # If para testar as retas.
 if RetaUm + RetaDois > RetaTres and RetaDois + RetaTres > RetaUm and RetaTres + RetaUm > RetaDois:
     print('As três retas formam um triângulo.')
+    # If para dizer qual o tipo do triângulo.
+    if RetaUm == RetaDois and RetaDois == RetaTres:
+        print('Este triângulo é do tipo equilátero.')
+    elif RetaUm == RetaDois or RetaDois == RetaTres or RetaTres == RetaUm:
+        print('Este triângulo é do tipo isósceles.')
+    else:
+        print('Este triângulo é do tipo escaleno.')
 else:
     print('As três retas não formam um triângulo.')
-
-# -----------------------------------------------------------------------------
-# Debug de variáveis
-
-print(RetaUm, RetaDois, RetaTres)
 
 # -----------------------------------------------------------------------------
