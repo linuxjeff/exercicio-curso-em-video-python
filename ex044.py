@@ -20,18 +20,27 @@
 #  v0.0.1 21-09-2023, Jefferson Santana
 #   - Versão inicial
 #   - Criada área de variáveis
-#   - Criado debug de variáveis.
+#   - Criado debug de variáveis
+#   - Criado variáveis ValorProduto e FormaPagamento
+#   - Criado printes para mostrar opções
 #
 # Licença: MIT.
 #
 
 # Variáveis
 
+ValorProduto = float(input('Qual o valor do produto: R$'))
 
+print('Qual a forma de pagamento?')
+print('1 - Cheque (á vista) ou dinheiro')
+print('2 - Cartão débito ou crédito (á vista)')
+print('3 - Cartão de crédito em duas vezes')
+print('4 - Cartão de crédito em três vezes')
+FormaPagamento = int(input('>>> '))
 
 # -----------------------------------------------------------------------------
 # Debug variáveis
 
-print()
+print(ValorProduto, FormaPagamento)
 
 # -----------------------------------------------------------------------------
