@@ -23,6 +23,8 @@
 #   - Criado debug de variáveis
 #   - Criado variáveis ValorProduto e FormaPagamento
 #   - Criado printes para mostrar opções
+#   - Criado if para desconto e juros de pagamento
+#   - Retirada área de debug
 #
 # Licença: MIT.
 #
@@ -39,8 +41,22 @@ print('4 - Cartão de crédito em três vezes')
 FormaPagamento = int(input('>>> '))
 
 # -----------------------------------------------------------------------------
-# Debug variáveis
+# Execução direta
 
-print(ValorProduto, FormaPagamento)
+if FormaPagamento == 1:
+    ValorDesconto = (ValorProduto * 10) / 100
+    print('Valor do desconto: R${:.2f}'.format(ValorDesconto))
+    print('Valor do produto com desconto: R${:.2f}'.format(ValorProduto - ValorDesconto))
+elif FormaPagamento == 2:
+    ValorDesconto = (ValorProduto * 5) / 100
+    print('Valor do desconto: R${:.2f}'.format(ValorDesconto))
+    print('Valor do produto com desconto: R${:.2f}'.format(ValorProduto - ValorDesconto))
+elif FormaPagamento == 3:
+    print('Valor do desconto: R$0.00')
+    print('Valor das parcelas: R${:.2f}'.format(ValorProduto / 2))
+elif FormaPagamento == 4:
+    ValorJuros = (ValorProduto * 20) / 100
+    print('Valor do Juros: R${:.2f}'.format(ValorJuros))
+    print('Valor da parcelas: R${:.2f}'.format((ValorProduto + ValorJuros) / 3))
 
 # -----------------------------------------------------------------------------
