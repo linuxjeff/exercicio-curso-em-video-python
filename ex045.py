@@ -16,6 +16,33 @@
 #
 #  v0.0.1 25-09-2023, Jefferson Santana
 #   - Versão inicial
+#   - Criado área para importa bibliotáca
+#   - importando função randrange da bibliotéca random
+#   - Criada área de variáveis
+#   - Criada área de debug de variáveis
+#   - Criada área de execução direta
+#
 #
 # Licença: MIT.
 #
+
+# Importado bibliotéca
+
+from random import randrange
+
+# -----------------------------------------------------------------------------
+# Variáveis
+
+
+
+# -----------------------------------------------------------------------------
+# Execução direta
+
+
+
+# -----------------------------------------------------------------------------
+# Debug de variáveis
+
+print()
+
+# -----------------------------------------------------------------------------
