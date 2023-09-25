@@ -7,7 +7,7 @@
 #
 # -----------------------------------------------------------------------------
 #   Descrição: O jogador escolhe entre peda papel ou tesousa. Depois o
-#              CPU escolhe e no final vemos quem ganhou.
+#              CPU e no final vemos quem ganhou.
 #
 # -----------------------------------------------------------------------------
 #
@@ -21,8 +21,10 @@
 #   - Criada área de variáveis
 #   - Criada área de debug de variáveis
 #   - Criada área de execução direta
-#   - Criadas as vriáveis "Escolha" e "CPU"
-#   - Cirado if para devinir quem ganhou
+#   - Criadas as vriáveis "Escolha" e "CPUEscolha"
+#   - Criado if para devinir quem ganhou
+#   - Criado if para colocar escolha no texto da CPU e do Jogador
+#   - Removida área de debug de variáveis
 #
 #
 # Licença: MIT.
@@ -42,20 +44,37 @@ print('2 - Pedra')
 print('3 - Tesoura')
 Escolha = int(input('>>> '))
 
-CPU = randrange(1, 4)
+CPUEscolha = randrange(1, 4)
 
 # -----------------------------------------------------------------------------
 # Execução direta
 
-if Escolha == CPU:
+# If escolha do jogador
+if Escolha == 1:
+    Jogador = 'Papel'
+
+elif Escolha == 2:
+    Jogador = 'Pedra'
+
+else:
+    Jogador = 'Tesoura'
+
+# If escolha da CPU
+if CPUEscolha == 1:
+    CPU = 'Papel'
+
+elif CPUEscolha == 2:
+    CPU = 'Pedra'
+
+else:
+    CPU = 'Tesoura'
+
+# if que mostra quem ganhou
+print('Você escolheu: {}\nA CPU escolheu: {}'.format(Jogador, CPU))
+if Escolha == CPUEscolha:
     print('Vocês empataram!')
-elif Escolha == 1 and CPU == 2 or Escolha == 2 and CPU == 3 or Escolha == 3 and CPU == 1:
+elif Escolha == 1 and CPUEscolha == 2 or Escolha == 2 and CPUEscolha == 3 or Escolha == 3 and CPUEscolha == 1:
     print('Você Ganhou!')
 else:
     print('Você perdeu!')
-# -----------------------------------------------------------------------------
-# Debug de variáveis
-
-print(Escolha, CPU)
-
 # -----------------------------------------------------------------------------
