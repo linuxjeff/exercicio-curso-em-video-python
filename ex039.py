@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 #
 # ex039 - Programa para verificar o andamento do alistamento.
 #
@@ -20,6 +19,11 @@
 #   - criado o debug de variáveis
 #   - Importando date da biblioteca datetime
 #   - Criado if para testar a condição do alistamento
+#  v0.0.2 28-09-2023, Jefferson Santana
+#   - Criada a opção de sexo
+#   - Criado a variável sexo
+#   - Modificado o if para tem a opção sexo
+#   _ Removida área de debug de variáveis
 #
 # Licença: MIT.
 #
@@ -31,6 +35,9 @@ from datetime import date
 # -----------------------------------------------------------------------------
 # Varáveis ínicias
 
+print('Qual seu sexo\n1 - feminino\n2 - masculino')
+Sexo = int(input('>>> '))
+
 AnoDeNascimento = int(input('Qual o ano do seu nascimento?\n>>> '))
 
 AnoAtual = int(date.today().year)
@@ -39,14 +46,12 @@ Idade = AnoAtual - AnoDeNascimento
 
 # -----------------------------------------------------------------------------
 # If para verificar o ano do alistamento.
-if Idade == 18:
+if Sexo == 2 and Idade == 18:
     print('Você tem que se alista!')
-elif Idade < 18:
+elif Sexo == 2 and Idade < 18:
     print('Seu alistamento será no ano de {}'.format(AnoAtual + (18 - Idade)))
-elif Idade > 18:
+elif Sexo == 2 and Idade > 18:
     print('Seu alistamento era para ser no ano de {}'.format(AnoAtual - (Idade - 18)))
     print('Caso não tenha se apresentado procure o escritório das forças armadas mais próximo.')
-
-# debug de variáveis
-
-print(AnoDeNascimento, AnoAtual, Idade)
+else:
+    print('Você é do sexo feminido. Seu alistamento não é obrigatório.')
