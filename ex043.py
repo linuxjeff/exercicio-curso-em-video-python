@@ -25,6 +25,8 @@
 #   - Criada variável IMC
 #   - Criado if de teste do IMC
 #   - Criada shebang do python
+#  v0.0.3 05-10-2023, Jefferson Santana
+#   - Corrigido erro no cálculo do IMC
 #
 # Licença: MIT.
 #
@@ -35,7 +37,7 @@ Altura = float(input('Qual a sua altura?\n>>> '))
 
 Peso = float(input('Qual o seu peso?\n>>> '))
 
-IMC = Peso / Altura
+IMC = Peso / (Altura ** 2)
 
 # -----------------------------------------------------------------------------
 # Execução direta
