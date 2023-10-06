@@ -25,6 +25,8 @@
 #   - Criado printes para mostrar opções
 #   - Criado if para desconto e juros de pagamento
 #   - Retirada área de debug
+#  v0.0.2 06-10-2023, Jefferson Santana
+#   - Modificado a opção 4 do if para pedir o número de parcelas
 #
 # Licença: MIT.
 #
@@ -37,7 +39,7 @@ print('Qual a forma de pagamento?')
 print('1 - Cheque (á vista) ou dinheiro')
 print('2 - Cartão débito ou crédito (á vista)')
 print('3 - Cartão de crédito em duas vezes')
-print('4 - Cartão de crédito em três vezes')
+print('4 - Cartão de crédito em três vezes ou mais')
 FormaPagamento = int(input('>>> '))
 
 # -----------------------------------------------------------------------------
@@ -56,7 +58,8 @@ elif FormaPagamento == 3:
     print('Valor das parcelas: R${:.2f}'.format(ValorProduto / 2))
 elif FormaPagamento == 4:
     ValorJuros = (ValorProduto * 20) / 100
+    NParcelas = int(input('Qual o número de parcelas?\n>>> '))
     print('Valor do Juros: R${:.2f}'.format(ValorJuros))
-    print('Valor da parcelas: R${:.2f}'.format((ValorProduto + ValorJuros) / 3))
+    print('Valor da parcelas: R${:.2f}'.format((ValorProduto + ValorJuros) / NParcelas))
 
 # -----------------------------------------------------------------------------
