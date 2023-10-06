@@ -27,6 +27,7 @@
 #   - Retirada área de debug
 #  v0.0.2 06-10-2023, Jefferson Santana
 #   - Modificado a opção 4 do if para pedir o número de parcelas
+#   - Criada a opção inválida no if
 #
 # Licença: MIT.
 #
@@ -61,5 +62,7 @@ elif FormaPagamento == 4:
     NParcelas = int(input('Qual o número de parcelas?\n>>> '))
     print('Valor do Juros: R${:.2f}'.format(ValorJuros))
     print('Valor da parcelas: R${:.2f}'.format((ValorProduto + ValorJuros) / NParcelas))
+else:
+    print('Opção inválida!')
 
 # -----------------------------------------------------------------------------
