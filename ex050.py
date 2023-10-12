@@ -19,6 +19,7 @@
 #   - Criada área de variáveis principais
 #   - Criado for para somar nímeros pares
 #   - Criado print para mostrar soma final.
+#   - Adicionado comentário(s) para ajudar a letura do código.
 #
 # Licença: MIT.
 #
@@ -33,5 +34,7 @@ for Contador in range(1, 7):
     Numero = int(input('Digite um número.\n>>> '))
     if Numero % 2 == 0:
         Soma = Soma + Numero
+
+# Print que mostra a soma dos números pares.
 
 print('Soma dos valores pares digitados: {}'.format(Soma))
