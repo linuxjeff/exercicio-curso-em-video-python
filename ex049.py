@@ -15,6 +15,24 @@
 #
 #  v0.0.1 12-10-2023, Jefferson Santana
 #   - Versão inicial
+#   - Criada área de variável
+#   - Criada variável para receber o número
+#   - Criado for para gerar tabuada
+#   - Criado prints de decoração.
 #
 # Licença: MIT.
 #
+
+# Variáveis principais
+Numero = int(input('Digite o número para ver sua tabuada.\n>>> '))
+
+# Principal
+
+print('Tabuada do número: {}'.format(Numero))
+
+print('-' * 15)
+
+for Contador in range(0, 11):
+    print('{:^} x {:>2} = {:^}'.format(Numero, Contador, (Numero * Contador)))
+
+print('-' * 15)
