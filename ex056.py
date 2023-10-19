@@ -21,3 +21,9 @@
 #
 # Licença: MIT.
 #
+
+Garanta = 0
+
+for pessoas in range(1, 5):
+    Nome = str(input('Qual seu Nome?\n>>> ')).lstrip().rstrip().title(), int(input('idade'))
+    print(Nome[1])
