@@ -19,7 +19,8 @@
 #   - Criado for para somar mutiplos
 #   - Criado print para mostrar resultado
 #   - Corrigido erro no cálculo, falta ver se o número era impar
-#   - Corrido o contador para contar somente os números impares.
+#   - Corrido o contador para contar somente os números impares
+#   - Retirado o if para testar se o numero é impar
 #
 # Licença: MIT.
 #
@@ -28,6 +29,5 @@ mutiplos = 0
 
 for contador in range(1, 501, 2):
     if contador % 3 == 0:
-        if contador % 2 == 1:
-            mutiplos = mutiplos + contador
+        mutiplos = mutiplos + contador
 print('A soma dos multiplos é: {}'.format(mutiplos))
