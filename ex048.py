@@ -19,13 +19,14 @@
 #   - Criado for para somar mutiplos
 #   - Criado print para mostrar resultado
 #   - Corrigido erro no cálculo, falta ver se o número era impar
+#   - Corrido o contador para contar somente os números impares.
 #
 # Licença: MIT.
 #
 
 mutiplos = 0
 
-for contador in range(1, 501):
+for contador in range(1, 501, 2):
     if contador % 3 == 0:
         if contador % 2 == 1:
             mutiplos = mutiplos + contador
