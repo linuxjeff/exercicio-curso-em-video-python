@@ -20,6 +20,7 @@
 #   - Criada a variável NDivisores para somar o divisores
 #   - Criado o for para somar os divisores e testar se é divisivel
 #   - Criado o if para mostrar se é primo ou composto
+#   - Acrescentada linha que mostra números que dividem o dividendo de forma inteira.
 #
 # Licença: MIT.
 #
@@ -30,12 +31,22 @@ Numero = int(input('Digite um número.\n>>> '))
 
 NDivisores = 0
 
+# Mostrrando os números
+
+print('O número {} é divisível pelos números em amarelo.'.format(Numero))
+
 # For para verificar se é primo
 
 for Contador in range(1, Numero+1):
     # If para acrescentar o divisor a variável.
     if Numero % Contador == 0:
         NDivisores = NDivisores + 1
+        print('\033[33m', end=' ')
+    else:
+        print('\033[31m', end=' ')
+    print('{}'.format(Contador),    end='')
+
+print('\033[m')
 
 # If para mostra se é primo ou composto.
 if NDivisores == 2:
