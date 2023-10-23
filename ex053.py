@@ -20,15 +20,16 @@
 #   - Criada área de variáveis
 #   - Criado o FOR para inveter frese
 #   - Cirado o IF para verificar se a frase é um palíndromo
+#   - Adicionado traço a lista de caracteres a eleimiar
 #
 # Licença: MIT.
 #
 
 # Variáveis
 
-TrocaDeCara = str.maketrans({' ': '', '.': '', '!': '', '?': '', ',': ''})
+TrocaDeCara = str.maketrans({' ': '', '.': '', '!': '', '?': '', ',': '', '-': ''})
 
-Frase = input('Digite uma frase.\n>>> ').lower().strip().lstrip().translate(TrocaDeCara)
+Frase = input('Digite uma frase.\n>>> ').lower().strip().translate(TrocaDeCara)
 
 Valor = len(Frase)
 
