@@ -21,6 +21,7 @@
 #   - Criada área de variáveis
 #   - Criado for para receber cadastro das pessoas e filtrar os dados.
 #   - Criados prints para escrever o resultados na tela.
+#   - Trocado ltrip e rstrip por strip.
 #
 # Licença: MIT.
 #
@@ -39,7 +40,7 @@ MulheresMenorVinte = 0
 for pessoas in range(1, 5):
     Nome = str(input('Qual seu Nome?\n>>> ')).lstrip().rstrip().title()
     Idade = int(input('Qual a sua idede?\n>>> '))
-    Sexo = str(input('Qual seu sexo?\nDigite H (homem) e M (mulher).\n>>> ')).lstrip().rstrip().upper()
+    Sexo = str(input('Qual seu sexo?\nDigite H (homem) e M (mulher).\n>>> ')).strip().upper()
     Media = Media + Idade
     if Sexo == 'H' and Idade > IdadeVelho:
         IdadeVelho = Idade
