@@ -17,6 +17,40 @@
 #  v0.0.1 31-10-2023, Jefferson Santana
 #   - Versão inicial
 #   - Criado o cabeçalho do programa
+#   - Criada área para variáveis íniciais- Criado o prnit para exibir frase de destaque
+#   - Criado while para calcular a sequência de Fibonacci
+#   - Criado print para mostrar o ultimo termo
 #
 # Licença: MIT.
 #
+
+# Variáveis íniciais.
+
+Numero = int(input('Digite o primeiro termo da Sequência de Fibonacci.\n>>> '))
+
+NTermos = int(input('Digite os números de termos para ser exibidos.\n>>> ')) - 1
+
+UltimoTermo = int(0)
+
+Inicio = 1
+
+SomaUm = Inicio
+
+SomaDois = Inicio
+
+###
+# Exibe a frase para destaque.
+print('Sequência de Fibonacci do termo {} e mais {} termos.'.format(Numero, NTermos + 1))
+###
+# While para calcular e exibir a sequência de Fibonacci.
+while UltimoTermo != NTermos:
+    SomaUm = Inicio
+    if Inicio >= Numero:
+        print('{}'.format(Inicio), end=', ')
+        UltimoTermo += 1
+    Inicio = SomaUm + SomaDois
+    SomaDois = SomaUm
+###
+# Exibe o ultimo termo.
+print(Inicio)
+###
