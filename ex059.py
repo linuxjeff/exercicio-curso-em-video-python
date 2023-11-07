@@ -21,6 +21,7 @@
 #   - Criado while para o teste
 #   - Criado o if para operação com números
 #   - Criado o if para ver qual número é maior
+#   - Criado um elif para opção cinco(5) e o else ficou para opção inválida
 #
 # Licença: MIT.
 #
@@ -58,5 +59,8 @@ while Opcao != 5:
         NumeroUm = float(input('Digite um número.\n>>> '))
 
         NumeroDois = float(input('Digite outro número.\n>>> '))
-    else:
+    elif Opcao == 5:
         print('Até a próxima! :)')
+    else:
+        print('Opção inválida!')
+
