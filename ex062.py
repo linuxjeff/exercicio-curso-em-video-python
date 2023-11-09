@@ -18,49 +18,33 @@
 #   - Versão inicial
 #   - Criado o cabeçalho do programa
 #   - Criado while para receber opção
+#  v0.0.2 09-11-2023, Jefferson Santana
+#  - O while foi refeito para mostrar o número de termos desejados a seguir
 #
 # Licença: MIT.
 #
 
 # Variáveis íniciais
 
-Contador = 0
+Numero = int(input('Qual o primeiro termo da PA\n>>> '))
 
-PrimeiroTermo = int(input('Digite o primeiro termo da PA.\n>>> '))
+Razao = int(input('Qual a razão da PA?\n>>> '))
 
-Razao = int(input('Digite a razão da PA.\n>>> '))
+Contador = int(0)
 
-Opcao = 0
+PA = Numero
 
-OTermo = 0
+Parada = int(10)
 
-Rotdatnoc = 8
-
+Soma = int(0)
 ###
-while Opcao != 2:
-    OTermo = PrimeiroTermo
-    Contador = 0
-    Opcao = 0
-    # Printe do ínicio da PA.
-    print('PA: ({}, '.format(OTermo), end='')
-    ###
-    # While para calcular oito termos da PA.
-    while Contador != Rotdatnoc:
-        OTermo += Razao
-        print('{}, '.format(OTermo), end='')
-        Contador += 1
-    ###
-    # Printe do último termo da PA.
-    print('{})'.format(OTermo + Razao))
-    ###
-    # Este while recebe a opção e o número de termos a ser mostrados.
-    while Opcao != 1 and Opcao != 2:
-        Opcao = int(input('Deseja ver mais termos da PA?\nO padrão é dez termos.\n1 - Sim\n2 - Não\n>>> '))
-        if Opcao != 1 and Opcao != 2:
-            print('Opção invalida. Tente novamente.')
-        elif Opcao == 1:
-            Rotdatnoc = int(input('Quantos termos deseja ver da PA?\n>>> '))
-            if Rotdatnoc <= 10:
-                Rotdatnoc = 8
-            Rotdatnoc = Rotdatnoc - 2
-    ###
+# While para fazer a PA
+while Contador != Parada:
+    print('{} '.format(PA), end='')
+    Contador += 1
+    PA = PA + Razao
+    if Contador == Parada:
+        Soma = int(input('\nVocê deseja mais quantos termos?\n>>> '))
+        Contador = 0
+        Parada = Soma
+###
