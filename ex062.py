@@ -20,6 +20,7 @@
 #   - Criado while para receber opção
 #  v0.0.2 09-11-2023, Jefferson Santana
 #  - O while foi refeito para mostrar o número de termos desejados a seguir
+#  - Incluido um contador de termos
 #
 # Licença: MIT.
 #
@@ -37,6 +38,9 @@ PA = Numero
 Parada = int(10)
 
 Soma = int(0)
+
+ContadorDeTermos = int(0)
+
 ###
 # While para fazer a PA
 while Contador != Parada:
@@ -44,7 +48,9 @@ while Contador != Parada:
     Contador += 1
     PA = PA + Razao
     if Contador == Parada:
+        ContadorDeTermos = ContadorDeTermos + Parada
         Soma = int(input('\nVocê deseja mais quantos termos?\n>>> '))
         Contador = 0
         Parada = Soma
 ###
+print('Foram mostrados {} termos.'.format(ContadorDeTermos))
