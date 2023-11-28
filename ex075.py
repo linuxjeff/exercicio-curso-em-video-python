@@ -20,6 +20,8 @@
 #   - Criado código para verificar números nove
 #   - Criado código para verificar em qual posição aparece o primeiro três
 #   - Criado código para contabilizar números pares
+#   - A variável CNove foi movida para o local correto
+#   - Criado código para mostrar os números digitados
 #
 # Licença: MIT.
 #
@@ -32,8 +34,14 @@ NumeroQuatro = int(input('Digite um número\n>>> '))
 Numeros = (NumeroUm, NumeroDois, NumeroTres, NumeroQuatro)
 print()
 ###
-CNove = int(0)
+# Números digitados.
+print('Você digitou o número: ', end='')
+for Mostrar in Numeros:
+    print(Mostrar, end=' ')
+print('\n')
+##
 # Mostra quantos números nove foram digitados.
+CNove = int(0)
 for Nove in Numeros:
     if Nove == 9:
         CNove += 1
