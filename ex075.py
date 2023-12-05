@@ -22,6 +22,7 @@
 #   - Criado código para contabilizar números pares
 #   - A variável CNove foi movida para o local correto
 #   - Criado código para mostrar os números digitados
+#   - Modificação para mostrar a opção nenhum caso não tenha números pares
 #
 # Licença: MIT.
 #
@@ -67,4 +68,6 @@ print('Números pares: ', end='')
 for Par in Numeros:
     if Par % 2 == 0:
         print(f'{Par}', end=' ')
+    else:
+        print('Nenhum')
 ###
