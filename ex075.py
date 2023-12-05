@@ -23,6 +23,7 @@
 #   - A variável CNove foi movida para o local correto
 #   - Criado código para mostrar os números digitados
 #   - Modificação para mostrar a opção nenhum caso não tenha números pares
+#   - Modificação para consertar a opção nenhum
 #
 # Licença: MIT.
 #
@@ -64,10 +65,14 @@ else:
     print('Não foi encontrado o número três.')
 ###
 # Contabiliza os números pares.
+Pares = int(0)
 print('Números pares: ', end='')
 for Par in Numeros:
     if Par % 2 == 0:
         print(f'{Par}', end=' ')
     else:
-        print('Nenhum')
+        Pares += 1
+        if Pares == 4:
+            print('Nenhum')
+            break
 ###
