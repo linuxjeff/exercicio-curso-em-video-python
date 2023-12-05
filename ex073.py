@@ -19,6 +19,7 @@
 #   - Criado for para mostrar os quadro últimos da tabela
 #   - Criado for para mostrar times em ordem  alfabética
 #   - Criado for para mostrar a posição do Atlético-MG
+#   - Criado código para mostrar a tabela completa
 #
 # Licença: MIT.
 #
@@ -29,6 +30,11 @@ Brasileiro = ('Palmeiras', 'Botafogo', 'Flamengo', 'Grêmio', 'Bragantino', 'Atl
 
 Valor = int(0)
 ValorUltimos = int(0)
+###
+# Mostra tabela completa.
+print('Tabela completa:', end=' ')
+for Time in Brasileiro:
+    print(Time, end=' ')
 ###
 # Mostra os cinco primeiros.
 print('Cinco primeiros: ', end='')
