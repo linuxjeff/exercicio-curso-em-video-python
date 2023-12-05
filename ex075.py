@@ -24,6 +24,8 @@
 #   - Criado código para mostrar os números digitados
 #   - Modificação para mostrar a opção nenhum caso não tenha números pares
 #   - Modificação para consertar a opção nenhum
+#  v0.0.2 05-12-2023, Jefferson Santana
+#   - Correção no texto
 #
 # Licença: MIT.
 #
@@ -37,7 +39,7 @@ Numeros = (NumeroUm, NumeroDois, NumeroTres, NumeroQuatro)
 print()
 ###
 # Números digitados.
-print('Você digitou o número: ', end='')
+print('Você digitou o números: ', end='')
 for Mostrar in Numeros:
     print(Mostrar, end=' ')
 print('\n')
