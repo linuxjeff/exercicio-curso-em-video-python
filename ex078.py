@@ -17,6 +17,7 @@
 #   - Criado o cabeçalho do programa
 #   - Criada área de variáveis iniciais
 #   - Criado código para receber cinco números pelo teclado
+#   - Criado código para mostrar maior e menor números e suas posições
 #
 # Licença: MIT.
 #
@@ -26,4 +27,16 @@ Numeros = list()
 # Código para receber númneros
 for Contador in range(0, 5):
     Numeros.append(int(input('Digite um número: ')))
+###
+# Código para mostrar o maior e menor números e suas posições.
+Maior = max(Numeros)
+Menor = min(Numeros)
+print(f'Maior número é {Maior}, ele esta na(s) Posição(ães): ', end='')
+for Posicao, Numero in enumerate(Numeros):
+    if Numero == Maior:
+        print(Posicao + 1, end=' ')
+print(f'\nMaior número é {Menor}, ele esta na(s) Posição(ães): ', end='')
+for Posicao, Numero in enumerate(Numeros):
+    if Numero == Menor:
+        print(Posicao + 1, end=' ')
 ###
