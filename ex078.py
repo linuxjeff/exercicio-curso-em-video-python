@@ -15,6 +15,15 @@
 #  v0.0.1 09-12-2023, Jefferson Santana
 #   - Versão inicial
 #   - Criado o cabeçalho do programa
+#   - Criada área de variáveis iniciais
+#   - Criado código para receber cinco números pelo teclado
 #
 # Licença: MIT.
 #
+# Variáveis iniciais.
+Numeros = list()
+###
+# Código para receber númneros
+for Contador in range(0, 5):
+    Numeros.append(int(input('Digite um número: ')))
+###
