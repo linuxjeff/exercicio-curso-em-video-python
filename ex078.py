@@ -18,15 +18,18 @@
 #   - Criada área de variáveis iniciais
 #   - Criado código para receber cinco números pelo teclado
 #   - Criado código para mostrar maior e menor números e suas posições
+#   - Melhoria para mostrar a posição que o número vai oculpar
 #
 # Licença: MIT.
 #
 # Variáveis iniciais.
 Numeros = list()
+RealPosicao = int(1)
 ###
 # Código para receber númneros
 for Contador in range(0, 5):
-    Numeros.append(int(input('Digite um número: ')))
+    Numeros.append(int(input(f'Digite um número {RealPosicao}: ')))
+    RealPosicao += 1
 ###
 # Código para mostrar o maior e menor números e suas posições.
 Maior = max(Numeros)
