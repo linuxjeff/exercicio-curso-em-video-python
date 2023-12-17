@@ -18,6 +18,8 @@
 #   - Criada área de variáveis iniciais
 #   - Criado código para receber valores e não aceitar duplicadas
 #   - Criado códigos para mostrar valores em ordem crescente
+#  v0.0.2 17-12-2023, Jefferson Santana
+#   - Consertado Bug do número 0
 #
 # Licença: MIT.
 #
@@ -25,13 +27,13 @@
 Numeros = list()
 ###
 # Código para receber os números.
-Casou = int(0)
+Casou = ''
 Sair = str('A')
 while Sair[0] != 'N':
     NovoNumero = int(input('Digite um número: '))
     for Duplicado in Numeros:
         if Duplicado == NovoNumero:
-            Casou = Duplicado
+            Casou = int(Duplicado)
     if Casou == NovoNumero:
         print(f'O número {Casou} já existe. Tente outro.')
     else:
