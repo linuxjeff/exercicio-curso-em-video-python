@@ -20,6 +20,8 @@
 #   - Criado código para mostrar maior e menor números e suas posições
 #   - Melhoria para mostrar a posição que o número vai oculpar
 #   - Criado código para mostrar números digitados
+#  v0.0.2 17-12-2023, Jefferson Santana
+#   - Correção no texto do programa
 #
 # Licença: MIT.
 #
@@ -44,7 +46,7 @@ print(f'\nMaior número é {Maior}, ele esta na(s) Posição(ães): ', end='')
 for Posicao, Numero in enumerate(Numeros):
     if Numero == Maior:
         print(Posicao + 1, end=' ')
-print(f'\nMaior número é {Menor}, ele esta na(s) Posição(ães): ', end='')
+print(f'\nMenor número é {Menor}, ele esta na(s) Posição(ães): ', end='')
 for Posicao, Numero in enumerate(Numeros):
     if Numero == Menor:
         print(Posicao + 1, end=' ')
