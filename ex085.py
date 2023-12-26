@@ -15,57 +15,45 @@
 #  v0.0.1 23-12-2023, Jefferson Santana
 #   - Versão inicial
 #   - Criado o cabeçalho do programa
+#   - Programa reescrito utilizando logica pedida no exercício
 #   - Criada a área de variáveis iniciais
-#   - Criado o código que recebe os números e separa na lista Pares e Impares e depois coloca tudo na lista Numeros
-#   - Criado o código que mostra os números pares
-#   - Criado o código que mostra os números impares
+#   - Criado o código para receber os números e colocá-los na lista (Pares ou impares) correspondente
+#   - Criado o código para mostrar os números pares
+#   - Criado o código para mostrar os números impares
 #
-# Licença: MIT.
 #
-# Variáveis iniciais.
-Numeros = list()
-
-Pares = list()
-
-Impares = list()
+# Variáveis Iniciais.
+Numeros = [[], []]
 ###
-# Código recebe números e coloca nas listas Pares e Impares. Depois coloca as duas listas na lista Numeros.
-for Numero in range(1, 8):
-    Valor = int(input(f'Digite o {Numero}º número: '))
-    if Valor % 2 == 0:
-        Pares.append(Valor)
-        Pares.sort()
+# Recebe os números e coloca na lista (Pares ou impares) correspondente.
+for Contatdor in range(1, 8):
+    NovoNumero = int(input(f'Digite o {Contatdor}º número: '))
+    if NovoNumero % 2 == 0:
+        Numeros[0].append(NovoNumero)
+        Numeros[0].sort()
     else:
-        Impares.append(Valor)
-        Impares.sort()
-    if Numero == 7:
-        Numeros.append(Pares[:])
-        Numeros.append(Impares[:])
-##
-# Separação.
-print('_-' * 30)
+        Numeros[1].append(NovoNumero)
+        Numeros[1].sort()
 ###
-# Código para mostrar números impares.
-print('Números pares: ', end='')
-Par = Numeros[0]
-LenPares = len(Par)
-for Posicao, NuPar in enumerate(Par):
-    if LenPares == 1:
-        print(NuPar)
-    elif LenPares != Posicao + 1:
-        print(NuPar, end=', ')
+# Mostra os números pares.
+print('O(s) número(s) par(es): ', end='')
+LenPar = len(Numeros[0])
+for Posicao, Par in enumerate(Numeros[0]):
+    if LenPar == 1:
+        print(f'{Par}')
+    elif LenPar != Posicao + 1:
+        print(f'{Par}', end=', ')
     else:
-        print(NuPar)
+        print(f'{Par}')
 ###
-# Código para mostrar números impares.
-print('Números impares: ', end='')
-Impar = Numeros[1]
-LenImpares = len(Impar)
-for Posicao, NuImpar in enumerate(Impar):
-    if LenImpares == 1:
-        print(NuImpar)
-    elif LenImpares != Posicao + 1:
-        print(NuImpar, end=', ')
+# Mostra os números ímpares
+print('O(s) número(s) impar(es): ', end='')
+LenImpar = len(Numeros[1])
+for Posicao, Impar in enumerate(Numeros[1]):
+    if LenImpar == 1:
+        print(f'{Impar}')
+    elif LenImpar != Posicao + 1:
+        print(f'{Impar}', end=', ')
     else:
-        print(NuImpar)
+        print(f'{Impar}')
 ###
