@@ -18,11 +18,15 @@
 #   - Criada a área das variáveis inicias
 #   - Criado o código para gerar os números das apostas
 #   - Criado o código para mostrar o resultado
+#  v0.0.2 15-01-2024, Jefferson Santana
+#   - Colocado a biblioteca time para uso da função sleep
+#   - Revisto as quebras de linha no printes dos resultados
 #
 # Licença: MIT.
 #
 # Importando Bibliotecas
 from random import randint
+from time import sleep
 ###
 # Variaveis iniciais
 Palpites = list()
@@ -48,9 +52,11 @@ while Apostas + 1 != Jogos:
 ###
 # Código para mostrar resultados.
 Njogos = len(Palpites)
-print(f'-_-_-_ Sorteado(s) {Jogos -1} jogo(s) _-_-_-')
+print(f'-_-_-_ Sorteado(s) {Jogos -1} jogo(s) _-_-_-', end='')
 for Contador in range(0, Njogos):
+    sleep(1.5)
     print(f'\nJogo {Contador + 1}: ', end='')
     for Nnumeros in Palpites[Contador]:
         print(f'{Nnumeros}', end=' ')
+print(f'\n-_-_-_-_-_-_ Boa sorte _-_-_-_-_-_-')
 ###
