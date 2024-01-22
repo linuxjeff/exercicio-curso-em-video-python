@@ -42,5 +42,5 @@ while True:
             print('Opção invalida! Tente novamente.')
     if FimCadastro == 1:
         break
-
+###
 print(Dados)
