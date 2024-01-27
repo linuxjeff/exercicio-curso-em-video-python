@@ -18,6 +18,8 @@
 #   - Criada a área das variáveis iniciais
 #   - Criado o código para receber os números e colocalos na lista Matriz
 #   - Criado o código para mostrar a matriz na tela
+#  v0.0.2 27-01-2024, Jefferson Santana
+#   - Foi alterado o alinhamento dos printes.
 # Licença: MIT.
 #
 # Variáveis iniciais.
@@ -45,13 +47,13 @@ for contador in range(0, 3):
 # Código para mostrar a matriz na tela.
 print('_-' * 30)
 for Digitos in Matriz[0]:
-    print(f'[ {Digitos} ]', end='')
+    print(f'[ {Digitos:^5} ]', end='')
 
 print('\n', end='')
 for Digitos in Matriz[1]:
-    print(f'[ {Digitos} ]', end='')
+    print(f'[ {Digitos:^5} ]', end='')
 
 print('\n', end='')
 for Digitos in Matriz[2]:
-    print(f'[ {Digitos} ]', end='')
+    print(f'[ {Digitos:^5} ]', end='')
 ###
