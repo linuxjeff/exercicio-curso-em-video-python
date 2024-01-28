@@ -17,6 +17,8 @@
 #   - Criado código que recebe os alunos e suas notas
 #   - Criado código que mostra os alunos e suas médias
 #   - Criado código para mostrar notas de cada aluno por escolha do usuário
+#  v0.0.2 28-01-2024, Jefferson Santana
+#   - Colocado opção invalida no if de saída da escolha final
 #
 # Licença: MIT.
 #
@@ -69,4 +71,6 @@ while True:
         elif VerNotas[0] == 'S':
             Inicio = 1
             break
+        else:
+            print('Opção invalida! Tente novamente.')
 ###
