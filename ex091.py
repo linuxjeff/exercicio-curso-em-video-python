@@ -17,6 +17,7 @@
 #   - Criado o cabeçalho do programa
 #   - Criado o código para sortear os números dos jogadores
 #   - Criado o código que arruma as posições dos jogadores no pódio
+#   - Alterado ordem do pódio
 #
 # Licença: MIT.
 #
@@ -40,7 +41,7 @@ Lados = list()
 CopiaDaJogo = Jogos.copy()
 for Lista in CopiaDaJogo.values():
     Lados.append(Lista)
-Lados.sort()
+Lados.sort(reverse=True)
 MaxParaWhileDoSort = len(Lados)
 Jogos.clear()
 while Nsort != MaxParaWhileDoSort:
