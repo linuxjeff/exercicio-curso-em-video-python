@@ -18,6 +18,7 @@
 #   - Criado o código para sortear os números dos jogadores
 #   - Criado o código que arruma as posições dos jogadores no pódio
 #   - Alterado ordem do pódio
+#   - Alterado o código para utilizar apenas uma, dicionário
 #
 # Licença: MIT.
 #
@@ -38,21 +39,19 @@ for Contador in range(1, 5):
 # Código que arruma as posições dos jogadores no pódio.
 Nsort = ContadorDaLista = int(0)
 Lados = list()
-CopiaDaJogo = Jogos.copy()
-for Lista in CopiaDaJogo.values():
+for Lista in Jogos.values():
     Lados.append(Lista)
 Lados.sort(reverse=True)
 MaxParaWhileDoSort = len(Lados)
-Jogos.clear()
 while Nsort != MaxParaWhileDoSort:
-    for Jog, Dado in CopiaDaJogo.items():
+    for Jog, Dado in Jogos.items():
         if Dado == Lados[ContadorDaLista]:
             Nsort += 1
+            del Jogos[Jog]
             Jogos[Jog] = Dado
-            del CopiaDaJogo[Jog]
             break
     ContadorDaLista += 1
 ###
-print(Lados, CopiaDaJogo, Jogos)
+print(Lados, Jogos)
 
 
