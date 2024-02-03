@@ -12,13 +12,14 @@
 # -----------------------------------------------------------------------------
 # Histórico:
 #
-#  v0.0.1 xx-xx-xxxx, Jefferson Santana
+#  v0.0.1 31-01-2024, Jefferson Santana
 #   - Versão inicial
 #   - Criado o cabeçalho do programa
 #   - Criado o código para sortear os números dos jogadores
 #   - Criado o código que arruma as posições dos jogadores no pódio
 #   - Alterado ordem do pódio
 #   - Alterado o código para utilizar apenas uma, dicionário
+#   - Colocado a data no cabeçalho
 #
 # Licença: MIT.
 #
