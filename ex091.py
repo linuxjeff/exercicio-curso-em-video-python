@@ -20,6 +20,7 @@
 #   - Alterado ordem do pódio
 #   - Alterado o código para utilizar apenas uma, dicionário
 #   - Colocado a data no cabeçalho
+#   - criado print para imprimir a frase do começo
 #
 # Licença: MIT.
 #
@@ -31,6 +32,7 @@ from time import sleep
 Jogos = dict()
 ###
 # Código para sortear os números dos jogadores.
+print('Valores Sorteados:')
 for Contador in range(1, 5):
     Jogador = str(f'Jogador{Contador}')
     Jogos[Jogador] = randint(1, 6)
