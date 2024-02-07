@@ -20,7 +20,9 @@
 #   - Alterado ordem do pódio
 #   - Alterado o código para utilizar apenas uma, dicionário
 #   - Colocado a data no cabeçalho
-#   - criado print para imprimir a frase do começo
+#   - Criado print para imprimir a frase do começo
+#   - Criado o código que mostra o rank na tela
+#   - Feito a edentação dos printes que mostram o resultado
 #
 # Licença: MIT.
 #
@@ -36,7 +38,7 @@ print('Valores Sorteados:')
 for Contador in range(1, 5):
     Jogador = str(f'Jogador{Contador}')
     Jogos[Jogador] = randint(1, 6)
-    print(f'O {Jogador} tirou {Jogos[Jogador]}')
+    print(f'   O {Jogador} tirou {Jogos[Jogador]}')
     sleep(0.7)
 ###
 # Código que arruma as posições dos jogadores no pódio.
@@ -55,6 +57,11 @@ while Nsort != MaxParaWhileDoSort:
             break
     ContadorDaLista += 1
 ###
-print(Lados, Jogos)
-
-
+# Código que mostra o rank na tela.
+PosicaoR = int(1)
+print('Ranking dos jogadores:')
+for Jogador, Dados in Jogos.items():
+    print(f'   {PosicaoR}º lugar: {Jogador} com {Dados}')
+    PosicaoR += 1
+    sleep(0.7)
+###
