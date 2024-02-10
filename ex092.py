@@ -15,6 +15,29 @@
 #  v0.0.1 07-02-2024, Jefferson Santana
 #   - Versão inicial
 #   - Criado o cabeçalho do programa
+#   - Criado o código para receber os dados
 #
 # Licença: MIT.
 #
+# Importando bibliotecas
+from datetime import date
+###
+# Variáveis iniciais.
+Pessoa = dict()
+###
+# Código para receber os dados.
+Pessoa['Nome'] = str(input('Qual o nome: ')).strip().capitalize()
+Ano = int(input('Qual o ano de nascimento: '))
+Pessoa['Idade'] = int(date.today().year - Ano)
+CTPS = int(input('Carteira de trabalho (0 não tem): '))
+Pessoa['CTPS'] = CTPS
+
+if CTPS > 0:
+    AnoContratacao = int(input('Ano de contratação: '))
+    Pessoa['Contratação'] = AnoContratacao
+    Salario = float(input('Sálario: R$ '))
+    Pessoa['Sálario'] = Salario
+    Pessoa['Aposentadoria'] = (AnoContratacao - Ano) + 35
+###
+
+print(Pessoa)
