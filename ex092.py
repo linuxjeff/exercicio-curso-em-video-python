@@ -16,6 +16,7 @@
 #   - Versão inicial
 #   - Criado o cabeçalho do programa
 #   - Criado o código para receber os dados
+#   - Criado o código que mostra o resultado na tela
 #
 # Licença: MIT.
 #
@@ -39,5 +40,8 @@ if CTPS > 0:
     Pessoa['Sálario'] = Salario
     Pessoa['Aposentadoria'] = (AnoContratacao - Ano) + 35
 ###
-
-print(Pessoa)
+# Código que mostra o resultado na tela.
+print('-_' * 30)
+for Item, Valor in Pessoa.items():
+    print(f'{Item} tem o valor {Valor}')
+###
