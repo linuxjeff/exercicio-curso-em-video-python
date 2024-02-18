@@ -17,6 +17,7 @@
 #   - Criado o cabeçalho do programa
 #   - Criada a área de variáveis iniciais
 #   - Criado o código que recebe o cadastro
+#   - Criado o código para mostrar resultados
 #
 # Licença: MIT.
 #
@@ -60,4 +61,20 @@ while True:
     if FimDoCadastro == 1:
         break
 ###
-print(Mulheres, Pessoa, TotalIdade, TotalGrupo, CadastroDePessoas)
+# Código para mostrar resultados.
+print('-_' * 30)
+print(f'- O grupo tem {TotalGrupo} pessoas.')
+MediaDeIdade = TotalIdade / TotalGrupo
+print(f'- A média de idade é de {MediaDeIdade:.2f} anos.')
+print('- As mulheres cadastradas foram: ', end='')
+Mulheres.sort()
+for Mulher in Mulheres:
+    print(f'{Mulher}', end=' ')
+print('\n- Lista das pessoas que estão acima da média: ')
+print('\n', end='')
+for Cadastro in CadastroDePessoas:
+    if Cadastro['Idade'] > MediaDeIdade:
+        for Item, Valor in Cadastro.items():
+            print(f'{Item} = {Valor}', end='; ')
+        print('\n')
+###
