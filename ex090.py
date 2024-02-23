@@ -20,6 +20,7 @@
 #  v0.0.2 23-02-2024, Jefferson Santana
 #   - Foi modificado o if para mostrar os resultados com as médias corretas
 #   - Foi colocado a data da primeira versão e os dados da segunda
+#   - Foi modificado o if para guarda a situação
 #
 # Licença: MIT.
 #
@@ -36,10 +37,13 @@ print(f'Nome é igual a {aluno["nome"]}')
 
 print(f'Média é igual a {aluno["media"]}')
 
-if aluno['media'] > 7:
+if aluno['media'] >= 7:
+    aluno['situacao'] = str('Aprovado')
     print('Situação igual a Aprovado')
 elif aluno['media'] > 5:
+    aluno['situacao'] = str('Recuperação')
     print('Situação igual a Recuperação')
 else:
+    aluno['situacao'] = str('Reprovado')
     print('Situação é igual a Reprovado')
 ###
