@@ -12,13 +12,17 @@
 # -----------------------------------------------------------------------------
 # Histórico:
 #
-#  v0.0.1 11-03-2023, Jefferson Santana
+#  v0.0.1 11-03-2024, Jefferson Santana
 #   - Versão inicial
 #   - Criado o cabeçalho do programa
 #   - Criada a área de importação de bibliotecas
 #   - Criada a área das defs
 #   - Criada a área de exemplos
 #   - Criada o código para receber e mostrar a contagem
+#  v0.0.2 13-03-2024, Jefferson Santana
+#   - Modificado o ano da versão anterior
+#   - Modificada a def contador para fazer a inversão de números negativos
+#   - Modificada a def contador para fazer a inversão do zero para um
 #
 #
 # Licença: MIT.
@@ -30,6 +34,10 @@ from time import sleep
 # Defs
 
 def contador(inicio, fim, passo):
+    if passo < 0:
+        passo = passo * -1
+    elif passo == 0:
+        passo = 1
     print('-_' * 30)
     print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
     if fim <= 0:
