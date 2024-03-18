@@ -17,11 +17,13 @@
 #   - Criado o cabeçalho do programa
 #   - Criado a def que cria o título decorado
 #   - Criada área de exemplo
+#  v0.0.2 18-03-2024, Jefferson Santana
+#   - Erros de sintaxe corrigidos
 #
 # Licença: MIT.
 #
 # Declarando defs.
-def MostreaLinha(msg):
+def mostrealinha(msg):
     tamanholen = len(msg) + 6
     print('-' * tamanholen)
     print(f'{msg:^{tamanholen}}')
@@ -30,9 +32,9 @@ def MostreaLinha(msg):
 
 ###
 # Aŕea de exemplos
-MostreaLinha('Gustavo Guanabara')
+mostrealinha('Gustavo Guanabara')
 
-MostreaLinha('Curso de Python no YouTube')
+mostrealinha('Curso de Python no YouTube')
 
-MostreaLinha('CeV')
+mostrealinha('CeV')
 ###
