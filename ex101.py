@@ -21,6 +21,7 @@
 #   - Criada a área do código para exibir o resultado
 #   - Criada a função voto para mostrar se o voto é obrigatório
 #   - Criada a docstring da função voto
+#   - Corrigido problema com aspas simples na docstring da função voto
 #
 # Licença: MIT.
 #
@@ -31,11 +32,11 @@ from datetime import date
 ###
 # Funções
 def voto(ano=date.today().year):
-    '''
+    """
     A função voto mostra se  o voto é obrigatório ou facultativo.
     :param ano: O ano de nascimento da pessoa
     :return: retorna a contição do voto da pessoa
-    '''
+    """
     idade = date.today().year - ano
     resultado = str('')
     if idade <= 15:
