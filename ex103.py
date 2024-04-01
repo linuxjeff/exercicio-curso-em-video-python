@@ -22,9 +22,6 @@
 # Licença: MIT.
 #
 # Funções
-import numbers
-
-
 def ficha(nome='desconhecido', gols='0'):
     if nome == '' or nome == 'desconhecido':
         nome = '<desconhecido>'
