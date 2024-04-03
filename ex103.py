@@ -18,16 +18,23 @@
 #   - Criada a função ficha
 #   - Criada a área de variáveis globais
 #   - Criado o código que mostra o resultado(programa principal)
+#  v0.0.1 03-04-2024, Jefferson Santana
+#   - Melhorada a função ficha para reconhecer número vazios
 #
 # Licença: MIT.
 #
 # Funções
 def ficha(nome='desconhecido', gols='0'):
+    nome.strip().capitalize()
+    gols.strip().upper()
+    enumero = gols.isnumeric()
     if nome == '' or nome == 'desconhecido':
         nome = '<desconhecido>'
-    if gols == '' or gols == 0:
+    if enumero:
+        gols = gols
+    else:
         gols = 0
-    print(f'O jogador {nome.strip().capitalize()} fez {gols} gol(s) no campeonato.')
+    print(f'O jogador {nome} fez {gols} gol(s) no campeonato.')
 
 
 ###
