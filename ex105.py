@@ -16,11 +16,19 @@
 #   - Criado o cabeçalho do programa
 #   - Criada a função notas que resebe várias nota e mostra o resultado
 #   - Criado o código para mostrar o resultado.
+#  v0.0.2 05-04-2024, Jefferson Santana
+#   - Criado o Docstring da função notas
 #
 # Licença: MIT.
 #
 # Funcões
 def notas(*notas, sit=False):
+    '''
+    Função para analisar notas e situações de varios alunos.
+    :param notas: As notas dos alunos
+    :param sit: se deseja a verbalização da situação
+    :return: dicionários com várias informações.
+    '''
     resultado = dict()
     maiorvalor = menorvalor = media = float(0)
     numerodenotas = len(notas)
