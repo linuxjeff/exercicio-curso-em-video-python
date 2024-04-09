@@ -22,14 +22,11 @@
 #   - Criada a função voto para mostrar se o voto é obrigatório
 #   - Criada a docstring da função voto
 #   - Corrigido problema com aspas simples na docstring da função voto
+#  v0.0.1 09-04-2024, Jefferson Santana
+#   - Foi a importação da biblioteca para dentro da def
 #
 # Licença: MIT.
 #
-# Importando bibliotecas.
-from datetime import date
-
-
-###
 # Funções
 def voto(ano=date.today().year):
     """
@@ -37,6 +34,10 @@ def voto(ano=date.today().year):
     :param ano: O ano de nascimento da pessoa
     :return: retorna a contição do voto da pessoa
     """
+    # Importando bibliotecas.
+    from datetime import date
+    # A importação foi movida para o escopo da def.
+    ###
     idade = date.today().year - ano
     resultado = str('')
     if idade <= 15:
