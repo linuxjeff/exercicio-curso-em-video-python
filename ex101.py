@@ -24,11 +24,12 @@
 #   - Corrigido problema com aspas simples na docstring da função voto
 #  v0.0.1 09-04-2024, Jefferson Santana
 #   - Foi a importação da biblioteca para dentro da def
+#   - Corrigido o bug do parâmetro da def
 #
 # Licença: MIT.
 #
 # Funções
-def voto(ano=date.today().year):
+def voto(ano=2000):
     """
     A função voto mostra se  o voto é obrigatório ou facultativo.
     :param ano: O ano de nascimento da pessoa
