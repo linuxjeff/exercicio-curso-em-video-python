@@ -17,3 +17,21 @@
 #
 # Licença: MIT.
 #
+
+def aumentar(p=10, por=10):
+    p = p + ((p * por) / 100)
+    return p
+
+
+def diminuir(p=10, por=10):
+    p = p - ((p * por) / 100)
+    return p
+
+
+def dobro(p=10):
+    p = p * 2
+    return p
+
+def metade(p=10):
+
+print(diminuir(100, 10))
