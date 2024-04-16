@@ -17,18 +17,21 @@
 #   - Criada a área de importação de bibliotecas
 #   - Criada a área da variáveis globais
 #   - Cridado o programa principal
+#  v0.0.2 16-04-2024, Jefferson Santana
+#   - Adicionado a função moeda para formatar os valores
 #
 # Licença: MIT.
 #
 # Importando bibliotecas.
 import ex107
+from ex108 import moeda
 ###
 # Variáveis globais.
 preco = float(input('Digite um preço: R$'))
 ###
 # Programa principal.
-print(f'A metade de R${preco} é {ex107.metade(preco)}')
-print(f'O dobro de R${preco} é {ex107.dobro(preco)}')
-print(f'Aumentando 10%, temos R${ex107.aumentar(preco, 10)}')
-print(f'Reduzindo 13%, temos R${ex107.diminuir(preco, 13)}')
+print(f'A metade de {moeda(preco)} é {moeda(ex107.metade(preco))}')
+print(f'O dobro de {moeda(preco)} é {moeda(ex107.dobro(preco))}')
+print(f'Aumentando 10%, temos {moeda(ex107.aumentar(preco, 10))}')
+print(f'Reduzindo 13%, temos {moeda(ex107.diminuir(preco, 13))}')
 ###
