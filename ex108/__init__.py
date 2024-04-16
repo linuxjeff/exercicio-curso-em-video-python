@@ -16,16 +16,18 @@
 #   - Criado o cabeçalho
 #   - Criado a def moeda para modificar a formatação
 #   - Criada a docstring da função
+#  v0.0.2 16-04-2024, Jefferson Santana
+#   - Modificação na DOCSTRING
 #
 # Licença: MIT.
 #
 
 
 def moeda(p):
-    '''
+    """
     Esta função cria uma formatação para no estilo moeda para os números.
     :param p: Número a ser formatado.
     :return: Retorna o número com a formatação.
-    '''
+    """
     p = f'R${p:.2f}'
     return p
