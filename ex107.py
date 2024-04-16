@@ -14,6 +14,10 @@
 #  v0.0.1 12-04-2024, Jefferson Santana
 #   - Versão inicial
 #   - Criado o cabeçalho do módulo
+#   - Criada a def aumentar
+#   - Criado a def diminuir
+#   - Criado a def dobro
+#   - Criado a def metade
 #
 # Licença: MIT.
 #
@@ -32,6 +36,7 @@ def dobro(p=10):
     p = p * 2
     return p
 
-def metade(p=10):
 
-print(diminuir(100, 10))
+def metade(p=10):
+    p = p / 2
+    return p
