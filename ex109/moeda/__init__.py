@@ -14,28 +14,42 @@
 #  v0.0.4 19-04-2024, Jefferson Santana
 #   - Versão inicial
 #   - Feitas modificações para este documento
+#  v0.0.5 19-04-2024, Jefferson Santana
+#   - Def aumentar() recebeu a opção form para ativar a formatação
+#   - Def diminuir() recebeu a opção form para ativar a formatação
+#   - Def dobro() recebeu a opção form para ativar a formatação
+#   - Def metade() recebeu a opção form para ativar a formatação
+#   - mdificado o módulo ex108 para ex109
 #
 # Licença: MIT.
 #
 
 
-def aumentar(p=10, por=10):
+def aumentar(p=10, por=10, form=False):
     p = p + ((p * por) / 100)
+    if form:
+        p = moeda(p)
     return p
 
 
-def diminuir(p=10, por=10):
+def diminuir(p=10, por=10, form=False):
     p = p - ((p * por) / 100)
+    if form:
+        p = moeda(p)
     return p
 
 
-def dobro(p=10):
+def dobro(p=10, form=False):
     p = p * 2
+    if form:
+        p = moeda(p)
     return p
 
 
-def metade(p=10):
+def metade(p=10, form=False):
     p = p / 2
+    if form:
+        p = moeda(p)
     return p
 
 
