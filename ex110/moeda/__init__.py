@@ -11,15 +11,18 @@
 # -----------------------------------------------------------------------------
 # Histórico:
 #
-#  v0.0.4 19-04-2024, Jefferson Santana
+#  v0.0.4 16-04-2024, Jefferson Santana
 #   - Versão inicial
 #   - Feitas modificações para este documento
-#  v0.0.5 19-04-2024, Jefferson Santana
+#  v0.0.5 16-04-2024, Jefferson Santana
 #   - Def aumentar() recebeu a opção form para ativar a formatação
 #   - Def diminuir() recebeu a opção form para ativar a formatação
 #   - Def dobro() recebeu a opção form para ativar a formatação
 #   - Def metade() recebeu a opção form para ativar a formatação
-#   - mdificado o módulo ex108 para ex109
+#   - mdificado o módulo ex108 para ex110
+#  v0.0.6 18-04-2024, Jefferson Santana
+#   - Foi criada a def resume() que mostra um resumo
+#   - Foi criada a def mostrealinha() para mostrar títulos decorados
 #
 # Licença: MIT.
 #
@@ -61,3 +64,25 @@ def moeda(p):
     """
     p = f'R${p:.2f}'
     return p
+
+
+def resumo(p=0, aumento=0, reducao=0):
+    lista = ['Preço analisado:', moeda(p), 'Dobro do preço:', dobro(p, True), 'Metade do preço:',
+             metade(p, True), f'{aumento}% de aumento:', aumentar(p, aumento, True),
+             f'{reducao}% de redução:', diminuir(p, reducao, True)]
+    valor = int(1)
+    mostrealinha('Resumo do Valor', 16)
+    for mostra in lista[0::2]:
+        print(f'{mostra:<18}{lista[valor]:<8}')
+        valor += 2
+    mostrealinha('Resumo do Valor', 16, False)
+
+
+def mostrealinha(msg, espaco=6, titulo=True):
+    tamanholen = len(msg) + espaco
+    if titulo:
+        print('-' * tamanholen)
+        print(f'{msg:^{tamanholen}}')
+        print('-' * tamanholen)
+    else:
+        print('-' * tamanholen)
