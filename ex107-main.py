@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 #
-# ex110-main - Programa para testar os módulos.
+# ex111-main - Programa para testar os módulos.
 #
 # Site      : https://github.com/linuxjeff
 # Autor     : Jefferson Santana <computadores.rp@gmail.com>
 #
 # -----------------------------------------------------------------------------
-#   Descrição: Este programa é para testar os módulos do ex110.py.
+#   Descrição: Este programa é para testar os módulos do ex111.py.
 #
 # -----------------------------------------------------------------------------
 # Histórico:
@@ -20,7 +20,7 @@
 #  v0.0.2 16-04-2024, Jefferson Santana
 #   - Adicionado a função moeda para formatar os valores
 #  v0.0.3 16-04-2024, Jefferson Santana
-#   - Devido a mudança na biblioteca ex110 foram aterados linha correspondentes
+#   - Devido a mudança na biblioteca ex111 foram aterados linha correspondentes
 #  v0.0.4 19-04-2024, Jefferson Santana
 #   - Mudanças no programa principal para mostrar as formatações com a nova opção
 #  v0.0.5 20-04-2024, Jefferson Santana
@@ -29,7 +29,8 @@
 # Licença: MIT.
 #
 # Importando bibliotecas.
-from ex110 import moeda
+from ex111.utilitadescev import moeda
+
 ###
 # Variáveis globais.
 preco = float(input('Digite um preço: R$'))

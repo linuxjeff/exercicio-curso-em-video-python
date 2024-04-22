@@ -19,7 +19,7 @@
 #   - Def diminuir() recebeu a opção form para ativar a formatação
 #   - Def dobro() recebeu a opção form para ativar a formatação
 #   - Def metade() recebeu a opção form para ativar a formatação
-#   - mdificado o módulo ex108 para ex110
+#   - mdificado o módulo ex108 para ex111
 #  v0.0.6 18-04-2024, Jefferson Santana
 #   - Foi criada a def resume() que mostra um resumo
 #   - Foi criada a def mostrealinha() para mostrar títulos decorados
