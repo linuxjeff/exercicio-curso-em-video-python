@@ -15,6 +15,8 @@
 #   - Versão inicial
 #   - Criado o cabeçalho do pacote
 #   - Criada a função leiadinheiro()
+#  v0.0.2 24-04-2024, Jefferson Santana
+#   - Alterado a função leiadinheiro() para não aceitar entradas vazias
 #
 # Licença: MIT.
 #
@@ -27,6 +29,10 @@ def leiadinheiro(valor):
     contadorlen = len(valor)
     contavirgula = contaponto = int(0)
     while True:
+        if valor == '':
+            print(f'O valor {valor} é invalido.')
+            valor = str(input(f'{texto}'))
+            contadorlen = len(valor)
         for c in valor:
             if c.isnumeric():
                 numeromonetario = True
@@ -52,8 +58,8 @@ def leiadinheiro(valor):
                 contadorlen = len(valor)
                 break
             contadorlen -= 1
-        if contadorlen == 0:
-            retiravirgula = valor.split(',')
-            valor = '.'.join(retiravirgula)
-            valor = float(valor)
-            return valor
+            if contadorlen == 0:
+                retiravirgula = valor.split(',')
+                valor = '.'.join(retiravirgula)
+                valor = float(valor)
+                return valor
