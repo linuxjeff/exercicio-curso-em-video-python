@@ -25,15 +25,18 @@
 #   - Mudanças no programa principal para mostrar as formatações com a nova opção
 #  v0.0.5 20-04-2024, Jefferson Santana
 #   - Alterado programa principal para usar a def resumo
+#  v0.0.6 24-04-2024, Jefferson Santana
+#   - Alterado para incluir a função dado
 #
 # Licença: MIT.
 #
 # Importando bibliotecas.
 from ex111.utilitadescev import moeda
+from ex111.utilitadescev import dado
 
 ###
 # Variáveis globais.
-preco = float(input('Digite um preço: R$'))
+preco = dado.leiadinheiro('Digite um preço: R$')
 ###
 # Programa principal.
 moeda.resumo(preco, 80, 35)
