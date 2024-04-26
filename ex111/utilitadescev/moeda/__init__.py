@@ -23,6 +23,8 @@
 #  v0.0.6 18-04-2024, Jefferson Santana
 #   - Foi criada a def resume() que mostra um resumo
 #   - Foi criada a def mostrealinha() para mostrar títulos decorados
+#  v0.0.7 26-04-2024, Jefferson Santana
+#   - Modificado a função moeda para mostrar virgula no lugar de ponto
 #
 # Licença: MIT.
 #
@@ -56,14 +58,9 @@ def metade(p=10, form=False):
     return p
 
 
-def moeda(p):
-    """
-    Esta função cria uma formatação para no estilo moeda para os números.
-    :param p: Número a ser formatado.
-    :return: Retorna o número com a formatação.
-    """
-    p = f'R${p:.2f}'
-    return p
+def moeda(p=0, vmoeda='R$'):
+    p = f'{vmoeda}{p:.2f}'
+    return p.replace('.', ',')
 
 
 def resumo(p=0, aumento=0, reducao=0):
