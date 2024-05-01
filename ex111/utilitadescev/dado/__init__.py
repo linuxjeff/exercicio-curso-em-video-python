@@ -17,6 +17,8 @@
 #   - Criada a função leiadinheiro()
 #  v0.0.2 24-04-2024, Jefferson Santana
 #   - Alterado a função leiadinheiro() para não aceitar entradas vazias
+#  v0.0.3 01-05-2024, Jefferson Santana
+#   - Alterado a função leiadinheiro() para tirar espaços antes e depois dos valores
 #
 # Licença: MIT.
 #
@@ -25,7 +27,7 @@
 def leiadinheiro(valor):
     numeromonetario = False
     texto = valor
-    valor = str(input(f'{texto}'))
+    valor = str(input(f'{texto}')).strip()
     contadorlen = len(valor)
     contavirgula = contaponto = int(0)
     while True:
