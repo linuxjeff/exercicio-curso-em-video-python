@@ -17,6 +17,8 @@
 #   - Criada a função leiaint() para validar a leitura de números inteiros
 #   - Criada a função leiaflot() para validar a leitura de númeroa reais
 #   - Criado o programa principal que recebe os números e mostra o resultados
+#  v0.0.2 02-05-2024, Jefferson Santana
+#   - Concertado a identação da frase de retorno da exeção KeyboardInterrupt
 #
 # Licença: MIT.
 #
@@ -29,7 +31,7 @@ def leiaint(valor):
             numero = int(input(f'{valor}').strip())
             valorint = False
         except KeyboardInterrupt:
-            print('\033[31mO usuário preferiu não dititar este número.\033[m')
+            print('\n\033[31mO usuário preferiu não dititar este número.\033[m')
             numero = int(0)
             break
         except:
@@ -46,7 +48,7 @@ def leiaflot(valor):
             numero = float(input(f'{valor}').replace(',', '.').strip())
             valorflot = False
         except KeyboardInterrupt:
-            print('\033[31mO usuário preferiu não dititar este número.\033[m')
+            print('\n\033[31mO usuário preferiu não dititar este número.\033[m')
             valorflot = False
             numero = float(0)
         except:
