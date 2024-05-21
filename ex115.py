@@ -17,6 +17,7 @@
 #   - Foi criado o cabeçalho do programa
 #   - Criada a área de importação de bibliotecas
 #   - Programa principal recebe cadastro e mostra quem já foi cadastrados
+#   - Mudança na frase da função leiaint() que recebe a opção
 #
 # Licença: MIT.
 #
@@ -28,7 +29,7 @@ from ex111.utilitadescev.moeda import mostrealinha
 while True:
     mostrealinha('Menu Principal', 13)
     print('1 - Ver pessoas cadastradas\n2 - Cadastrar nova pessoa\n3 - Sair do sistema')
-    opcao = int(ex115modulos.leiaint('>>> ').strip())
+    opcao = int(ex115modulos.leiaint('>>> ', frasedeerro='Opção invalida!\nTente novamente.').strip())
     if opcao == 1:
         mostrealinha('Pessoas Cadastradas', 12)
         dadosdoscadastros = ex115modulos.crialista(arquivo='cadastro.txt')
