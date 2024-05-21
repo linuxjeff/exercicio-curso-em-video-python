@@ -21,6 +21,7 @@
 #   - Criado a função crialista()
 #   - Criado a função listaalinhada()
 #   - Criadas todas as docstrings
+#   - Mudanças na função leiaint()
 #
 # Licença: MIT.
 #
@@ -53,12 +54,13 @@ def escritatxt(dados='cadastro.txt', inserir=''):
             arquivo.write(f'\n{inserir}')
 
 
-def leiaint(frase='Digite um número: ', espaco=True, intoustr=False):
+def leiaint(frase='Digite um número: ', espaco=True, intoustr=False, frasedeerro='Não é um número interio!'):
     """
     Validado de número inteiro. Coloca um espaço no final se for necessário.
-    :param frase: Frase para mostrar a pedir o jogo.
+    :param frase: Frase de pedido.
     :param espaco: Coloca um espaço no final, mas entrega o número como string.
     :param intoustr: Devolve a saída como número inteiro.
+    :param frasedeerro: Frase para retornar quando tiver erro
     :return: Número inteiro como número ou string.
     """
     status = False
@@ -71,7 +73,7 @@ def leiaint(frase='Digite um número: ', espaco=True, intoustr=False):
             print('Não foi digitado nenhum número. O padrã sera mantido')
             status = True
         except:
-            print('Não é um número interio!')
+            print(f'{frasedeerro}')
 
         if status:
             break
